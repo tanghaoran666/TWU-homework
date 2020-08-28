@@ -1,0 +1,22 @@
+mkdir cli-practice
+cd cli-practice/
+touch readme.md
+cat>>readme.md
+Hi there, this is a readme file.
+Ctrl+D
+cat>>readme.md
+This is the second line of the readme file.
+crtl+D
+mv readme.md readme.txt
+mkdir document
+mv readme.txt document/introduction.txt
+cp ~/cli-practice/document/introduction.txt ~/cli-practice/document/readme.txt
+cd document/
+cat>readme.txt
+The quick brown fox jumps over a lazy dog
+Crtl+D
+cp -r  ~/cli-practice/document ~/cli-practice/docs
+cd ..
+rm -r document/
+mkdir -p parent/child/docs
+cp ~/cli-practice/docs/introduction.txt ~/cli-practice/parent/child/docs/
